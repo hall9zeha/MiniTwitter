@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context=".Ui.Auth.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextUserNameRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_logo_minitwitter_white" />
+
+    <EditText
+        android:id="@+id/editTextEmailRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:ems="10"
+        android:hint="@string/emailHint"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorBlueDark"
+
+        android:textColorLink="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordRegister"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextUserNameRegister"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextUserNameRegister"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextUserNameRegister" />
+
+    <TextView
+        android:id="@+id/textViewBackToLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/backToLoginText"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegister"
+        app:layout_constraintStart_toStartOf="@+id/buttonRegister"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/btnRegisterText"
+        android:textColor="@color/colorBlue"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBackToLogin"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPasswordRegister"
+        app:layout_constraintStart_toStartOf="@+id/editTextPasswordRegister"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordRegister" />
+
+    <EditText
+        android:id="@+id/editTextPasswordRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/passwdHint"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorBlueDark"
+        android:textColorLink="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmailRegister"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmailRegister"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailRegister" />
+
+    <EditText
+        android:id="@+id/editTextTextUserNameRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorBlueDark"
+        android:textColorLink="@color/white"
+        android:hint="@string/userNameHint"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmailRegister"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
