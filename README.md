@@ -25,7 +25,7 @@ Aplicación  de red social y un servicio de microblogging para la comunicación 
 
 ## Capturas de MiniTwitter :framed_picture:
 
-<img src="https://github.com/hall9zeha/MasterFirebase/blob/main/Screenshots/Screenshot_20220303-130141~2.jpg" alt="drawing" width="300"/>|
+<img src="https://github.com/hall9zeha/MiniTwitter/blob/main/Screenshots/Screenshot_20220305-151441.jpg" alt="drawing" width="300"/>|
 
 
 
